@@ -4,13 +4,21 @@
 
 Mech is a language for developing **data-driven**, **reactive** systems like animations, games, and robots. It makes **composing**, **transforming**, and **distributing** data easy, allowing you to focus on the essential complexity of your project.
 
-## Welcome
-
 You can try Mech online at [try.mech-lang.org](http://try.mech-lang.org).
 
 Usage and installation instructions can be found in the [documentation](http://mech-lang.org/page/learn/) or the [main Mech repository](https://github.com/mech-lang/mech).
 
 Read about progress on our [blog](http://mech-lang.org/blog/), and follow us on Twitter [@MechLang](https://twitter.com/MechLang).
+
+
+## Welcome
+
+This repository serves as a table of contents for the constellation of tools and utilities that comprise the Mech programming language:
+
+1. [Core](https://gitlab.com/mech-lang/core) - The language runtime. It's a small dataflow engine that accepts transactions of changes, and applies them to a compute network.  
+2. [Syntax](https://gitlab.com/mech-lang/syntax) - A compiler for a textual Mech syntax.
+3. [Program](https://gitlab.com/mech-lang/program) - Coordinates distributed Mech cores as a coherent program.
+
 
 ## Documentation
 
@@ -25,7 +33,9 @@ Documentation is hosted online at [mech-lang.org](http://docs.mech-lang.org), an
   - How-Tos
   - Mech for X  
 
+
 ## Installation
+
 
 ### From Binary
 
@@ -55,7 +65,7 @@ git submodule update --force --recursive --init --remote
 
 Mech is currently in the **alpha** stage of development. This means that while some features work and are tested, programs are still likely to crash and produce incorrect results. There is a "happy path" that works well, but it's quite narrow. We've implemented many language features, but most are incomplete and some are not yet implemented at all. 
 
-The project will hit the **beta** stage of development when all currently planned features have been implemented at least at as a prototype. The current target for this milestone is October 2022.
+The project will hit the **beta** stage of development when all currently planned features have been implemented at least as a prototype. The current target for this milestone is October 2022.
 
 See [ROADMAP.md](ROADMAP.md) for more.
 
