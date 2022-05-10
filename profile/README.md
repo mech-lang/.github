@@ -67,7 +67,7 @@ Mech is currently in the **alpha** stage of development. This means that while s
 
 The project will hit the **beta** stage of development when all currently planned features have been implemented at least as a prototype. The current target for this milestone is October 2022.
 
-See [ROADMAP.md](ROADMAP.md) for more.
+See [ROADMAP.md](https://github.com/mech-lang/mech/blob/main/ROADMAP.md?plain=1) for more.
 
 ## License
 
