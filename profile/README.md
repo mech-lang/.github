@@ -28,12 +28,14 @@ Indented code runs in an asynchronous “block”. These blocks
 are composable and reactive; they recompute automatically when 
 dependent data change, or some condition is met. This block 
 updates the state the balls every 16ms.
+
   ~ #dt
   #balls.x,y :+= #balls.vx,vy * #dt
   #balls.vy :+= #gravity * #dt
  
 The following block enforces boundary constraints, ensuring that 
 the balls will never leave the bounded area.
+
   ix = #balls.x,y > #bounds
   #balls.x,y{ix} := #bounds
   #balls.vx,vy{ix} := #balls.vx,vy * -80%
