@@ -48,15 +48,6 @@ Usage and installation instructions can be found in the [documentation](http://d
 ## Documentation
 
 Documentation is hosted online at [mech-lang.org](http://docs.mech-lang.org), and is open sourced on [GitHub](http://github.com/mech-lang/docs).
-
-- Mech platform references
-  - Syntax
-  - Ecosystem
-  - Architecture
-- User guides
-  - Tutorials
-  - How-Tos
-  - Mech for X  
   
 ## Project Roadmap
 
