@@ -12,8 +12,9 @@ You can try Mech online at [try.mech-lang.org](http://try.mech-lang.org). Read a
 Bouncing Balls Simulation
 ==========================
  
-This program is a forward kinematic simulation of three balls bouncing in a 2D bounded arena. 
-The balls are accelerated by simulated gravity and are repelled by the bounds of the arena.
+This program is a forward kinematic simulation of three balls 
+bouncing in a 2D bounded arena. The balls are accelerated by 
+simulated gravity and are repelled by the bounds of the arena.
 
 #balls = [|x<m> y<m> vy<m/s> vx<m/s>|
            20   10   2.4     0
@@ -23,15 +24,16 @@ The balls are accelerated by simulated gravity and are repelled by the bounds of
 #dt = 16<ms>
 #bounds = [x<m>: 500 y<m>: 600] 
 
-Indented code runs in an asynchronous “block”. These blocks are composable and reactive; 
-they recompute automatically when dependent data change, or some condition is met. This 
-block updates the state the balls every 16ms.
+Indented code runs in an asynchronous “block”. These blocks 
+are composable and reactive; they recompute automatically when 
+dependent data change, or some condition is met. This block 
+updates the state the balls every 16ms.
   ~ #dt
   #balls.x,y :+= #balls.vx,vy * #dt
   #balls.vy :+= #gravity * #dt
  
-The following block enforces boundary constraints, ensuring that the balls will never leave 
-the bounded area.
+The following block enforces boundary constraints, ensuring that 
+the balls will never leave the bounded area.
   ix = #balls.x,y > #bounds
   #balls.x,y{ix} := #bounds
   #balls.vx,vy{ix} := #balls.vx,vy * -80%
