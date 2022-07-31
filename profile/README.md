@@ -36,9 +36,12 @@ updates the state the balls every 16ms.
 The following block enforces boundary constraints, ensuring that 
 the balls will never leave the bounded area.
 
-  ix = #balls.x,y > #bounds
-  #balls.x,y{ix} := #bounds
-  #balls.vx,vy{ix} := #balls.vx,vy * -80%
+  ~ #dt
+  iy = #balls.x,y > #bounds 
+  ix = #balls.x,y < 0
+  #balls.x,y{iy} := #bounds
+  #balls.x,y{ix} := 0
+  #balls.vx,vy{iy | ix} := -#balls.vx,vy * 80%
 ```
 
 ## Installation
