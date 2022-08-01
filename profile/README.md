@@ -34,7 +34,7 @@ updates the state the balls every 16ms.
   #balls.vy :+= #gravity * #dt
  
 The following block enforces boundary constraints, ensuring that 
-the balls will never leave the bounded area.
+the balls will never leave the arena.
 
   ~ #dt
   iy = #balls.x,y > #bounds 
