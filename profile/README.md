@@ -6,4 +6,4 @@ Mech is a language for developing **data-driven**, **reactive** systems like rob
 
 - Read the [Docs](https://docs.mech-lang.org/) to learn more about Mech.
 - [Try](https://try.mech-lang.org/) Mech online in your browser
-- Follow our progress on our [blog](https://mech-lang.org/blog/).
+- Follow our progress on our [Blog](https://mech-lang.org/blog/).
